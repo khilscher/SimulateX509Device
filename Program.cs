@@ -16,12 +16,12 @@ namespace SimulateX509Device
         private static Random rnd = new Random();
 
         // Device ID registered in IoT Hub.
-        private static string deviceId = "device4302021";
+        private static string deviceId = "device123";
 
         // Path to pfx file with device cert. Generate this using openssl
         // CN in cert must match deviceId above and signed by root or intermediate cert uploaded to IoT Hub.
         // e.g. openssl pkcs12 -export -out device123.pfx -inkey device123.key -in device123.cer 
-        private static string pfxPath = @"c:\openssl_stuff\device4302021.pfx"; 
+        private static string pfxPath = @"c:\openssl_stuff\device123.pfx"; 
 
         // IoT Hub FQDN. Ensure root or intermediate cert has been uploaded to IoT Hub and verified.
         private static string iotHubFqdn = "youriothub.azure-devices.net";
